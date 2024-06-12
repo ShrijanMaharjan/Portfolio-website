@@ -3,8 +3,12 @@
   padding: 0px;
   font-family: "Poppins";
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
-  position: relative;
   width: 100%;
   height: 100vh;
   background: #eff4fd;
@@ -12,18 +16,23 @@
 h1 {
   font-size: 40px;
 }
-nav {
+.primary {
   display: flex;
   justify-content: space-between;
-  width: 84%;
-  margin: auto;
-  padding: 20px 0px;
   align-items: center;
+  padding: 10px 8%;
+}
+nav {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  position: fixed;
+
+  width: 100%;
 }
 nav ul li {
   list-style: none;
   display: inline-block;
-
   margin: 10px 20px;
 }
 nav ul li a {
@@ -41,9 +50,10 @@ nav ul li a:hover {
 .details {
   margin-left: 8%;
   margin-right: 8%;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+
+  grid-template-columns: 1fr 1fr;
 }
 
 .details h1 {
@@ -89,7 +99,9 @@ nav ul li a:hover {
   opacity: 0.6;
 }
 .details-photo {
-  width: 400px;
+  margin-top: 10rem;
+  width: 300px;
+  margin-left: 10rem;
   overflow: hidden;
 }
 .myimage {
@@ -326,6 +338,7 @@ nav ul li a:hover {
   margin-top: 50px;
 }
 .contact-info ul li a {
+  margin-right: 30px;
   font-family: 300;
   letter-spacing: 2px;
   text-decoration: none;
@@ -345,9 +358,7 @@ nav ul li a:hover {
 .contact-info ul li {
   background: transparent;
 }
-.facebook {
-  margin-right: 30px;
-}
+
 .Copyright {
   margin-top: 80px;
   display: flex;
